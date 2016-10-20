@@ -1,0 +1,39 @@
+#pull_wrapper{
+    	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	max-width: 640px;
+	margin-top: 45px;
+}
+#pull_pullDown{
+	text-align: center;
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+}
+.pullDownIcon{
+    width: 25px;
+    position: absolute;
+    top: 17px;
+}
+.pullDownLabel{
+    font-size: 14px;
+    margin-left: 30px;
+    color: #828282;
+}
+#pull_pullUp{
+	text-align: center;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+}
+.pullUpIcon{
+    width: 25px;
+    position: absolute;
+    top: 8px;
+}
+.pullUpLabel{
+    font-size: 14px;
+    margin-left: 30px;
+    color: #828282;
+}
