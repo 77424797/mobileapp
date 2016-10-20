@@ -1,0 +1,17 @@
+#citypicker_wrapper{
+    	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	max-width: 640px;
+	margin-top: 45px;
+}
+#citypicker_wrapper .menu div{
+	background: #0097FF;
+	text-align: center;
+	margin: 10px auto;
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
