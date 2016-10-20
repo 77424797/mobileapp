@@ -1,0 +1,257 @@
+/*----省市级联动样式库----*/
+
+#city_picker{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	max-width: 640px;
+	height: 100%;
+	z-index: 9;
+	background: white;
+}
+#cp_head{
+	position: fixed;
+	top: 0px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	background: #0097ff;
+	width: 100%;
+	max-width: 640px;
+	font-size: 17px;
+	border-bottom: 1px solid #E6E6E6;
+}
+#cp_head img{
+	    position: absolute;
+    left: 10px;
+    width: 25px;
+    top: 10px;
+}
+#address_menu{
+	position: fixed;
+	top: 46px;
+	width: 100%;
+	max-width: 640px;
+	height: 45px;
+	line-height: 45px;
+	background: white;
+	border-bottom: 1px solid #E6E6E6;
+}
+#address_menu div{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    font-size: 16px;
+}
+#address_menu span{
+	display: block;
+    border-bottom: 3px solid #0097FF;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -3px;
+}
+
+
+
+#province_page{
+	position: fixed;
+	top: 92px;
+	width: 100%;
+	max-width: 640px;
+	z-index: 10;
+	font-size: 14px;
+}
+#province_list div{
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	border-bottom: 1px solid #E6E6E6;
+}
+#city_page{
+	position: fixed;
+	top: 92px;
+	width: 100%;
+	max-width: 640px;
+	display: none;
+	z-index: 11;
+	font-size: 14px;
+}
+#city_list div{
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+#area_page{
+	position: fixed;
+	top: 92px;
+	width: 100%;
+	max-width: 640px;
+	display: none;
+	z-index: 12;
+	font-size: 14px;
+}
+#area_list div{
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+
+@-webkit-keyframes cp_right_in {
+	0% {
+		-webkit-transform: translate(640px, 0px);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+	}
+}
+@-webkit-keyframes cp_left_in {
+	0% {
+		-webkit-transform: translate(-640px, 0px);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+	}
+}
+@-webkit-keyframes cp_right_out {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+	}
+	100% {
+		-webkit-transform: translate(640px, 0px);
+	}
+}
+@-webkit-keyframes cp_left_out {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+	}
+	100% {
+		-webkit-transform: translate(-640px, 0px);
+	}
+}
+
+.cp_right_in {
+	-webkit-animation: cp_right_in 0.4s 0s 1 forwards;
+}
+.cp_left_in {
+	-webkit-animation: cp_left_in 0.4s 0s 1 forwards;
+}
+.cp_left_out {
+	-webkit-animation: cp_left_out 0.6s 0s 1 forwards
+}
+.cp_right_out{
+	-webkit-animation: cp_right_out 0.6s 0s 1 forwards;
+}
+.cp_check{
+	color: #0097FF;
+}
+.cp_check img{
+	    width: 17px;
+    vertical-align: initial;
+    margin-left: 15px;
+}
+
+
+
+/* 仿ios选择器 */
+#ios_cpicker_mask{
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	top: 0px;
+	height: 100%;
+	background: black;
+	z-index: 11;
+	opacity: 0.5;
+}
+#ios_cpicker{
+	width: 100%;
+	height: 285px;
+	background: white;
+	position: fixed;
+	bottom: 0px;
+	max-width: 640px;
+	z-index: 12;
+}
+#c_header{
+	height: 45px;
+	line-height: 45px;
+}
+#cpicker_cancle{
+	color: #0097FF;
+	margin-left: 15px;
+	float: left;
+}
+#cpicker_ok{
+	color: #0097FF;
+	float: right;
+	margin-right: 15px;
+}
+#c_body{
+	height: 200px;
+	-webkit-mask: -webkit-gradient(linear,0% 30%,0% 100%,from(rgba(222,187,71,1)),to(rgba(36,142,36,0)));
+}
+#ios_province_wrapper div div,#ios_city_wrapper div div,#ios_area_wrapper div div{
+	height:40px ;
+	line-height: 40px;
+	overflow: hidden;
+}
+#ios_province_wrapper,#ios_city_wrapper,#ios_area_wrapper{
+	text-align: center;
+	-webkit-mask: -webkit-gradient(linear,0% 30%,0% 0%,from(rgba(222,187,71,1)),to(rgba(36,142,36,0)));
+	float: left;
+	width: 33.33%;
+	font-size: 14px;
+}
+#c_selecter_top{
+    height: 1px;
+    border-bottom: 1px solid #cccccc;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 120px;
+}
+#c_selecter_fotter{
+    height: 1px;
+    border-bottom: 1px solid #cccccc;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 80px;
+}
+#c_title{
+	height: 40px;
+	line-height: 40px;
+}
+#c_title div{
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+
+@-webkit-keyframes pickerUp{
+	0%{
+		-webkit-transform:translate(0px,285px);
+	}
+	100%{
+		-webkit-transform: translate(0px,0px);
+	}
+}
+.pickerUp{
+	-webkit-animation: pickerUp 0.3s 0s 1 forwards;
+}
+@-webkit-keyframes pickerDown{
+	0%{
+		-webkit-transform:translate(0px,0px);
+	}
+	100%{
+		-webkit-transform: translate(0px,285px);
+	}
+}
+.pickerDown{
+	-webkit-animation: pickerDown 0.3s 0s 1 forwards;
+}
