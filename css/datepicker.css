@@ -1,0 +1,96 @@
+/*----日期选择样式库----*/
+#dpicker_mask{
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	top: 0px;
+	height: 100%;
+	background: black;
+	z-index: 11;
+	opacity: 0.5;
+}
+#dpicker{
+	width: 100%;
+	height: 285px;
+	background: white;
+	position: fixed;
+	bottom: 0px;
+	max-width: 640px;
+	z-index: 12;
+}
+#d_header{
+	height: 45px;
+	line-height: 45px;
+}
+#dpicker_cancle{
+	color: #0097FF;
+	margin-left: 15px;
+	float: left;
+}
+#dpicker_ok{
+	color: #0097FF;
+	float: right;
+	margin-right: 15px;
+}
+#d_body{
+	height: 200px;
+	-webkit-mask: -webkit-gradient(linear,0% 30%,0% 100%,from(rgba(222,187,71,1)),to(rgba(36,142,36,0)));
+}
+#year_wrapper .d_year,#month_wrapper .d_month,#day_wrapper .d_day,#hour_wrapper .d_hour,#minute_wrapper .d_minute{
+	height:40px ;
+	line-height: 40px;
+}
+#year_wrapper,#month_wrapper,#day_wrapper,#hour_wrapper,#minute_wrapper{
+	text-align: center;
+	-webkit-mask: -webkit-gradient(linear,0% 30%,0% 0%,from(rgba(222,187,71,1)),to(rgba(36,142,36,0)));
+	float: left;
+}
+#d_selecter_top{
+    height: 1px;
+    border-bottom: 1px solid #cccccc;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 120px;
+}
+#d_selecter_fotter{
+    height: 1px;
+    border-bottom: 1px solid #cccccc;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 80px;
+}
+#d_title{
+	height: 40px;
+	line-height: 40px;
+}
+#d_title div{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+@-webkit-keyframes pickerUp{
+	0%{
+		-webkit-transform:translate(0px,285px);
+	}
+	100%{
+		-webkit-transform: translate(0px,0px);
+	}
+}
+.pickerUp{
+	-webkit-animation: pickerUp 0.3s 0s 1 forwards;
+}
+@-webkit-keyframes pickerDown{
+	0%{
+		-webkit-transform:translate(0px,0px);
+	}
+	100%{
+		-webkit-transform: translate(0px,285px);
+	}
+}
+.pickerDown{
+	-webkit-animation: pickerDown 0.3s 0s 1 forwards;
+}
+
