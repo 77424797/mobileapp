@@ -1,0 +1,19 @@
+#drag_wrapper{
+    	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	max-width: 640px;
+	margin-top: 45px;
+}
+#drag_wrapper .drag{
+    background: #0097FF;
+    text-align: center;
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    line-height: 40px;
+    position: absolute;
+    left: 30%;
+    top: 100px;
+}
